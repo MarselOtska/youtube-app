@@ -1,0 +1,105 @@
+/*
+Stylesheet for HTML and CSS
+*/
+
+/* Reset default margin and padding for all elements */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+/* Remove underline and set color for anchor tags */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+  width: 0px; /* Hide scrollbar */
+  height: 5px;
+}
+
+/* Customize scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113); /* Set background color */
+  border-radius: 10px;
+  height: 200px; /* Set height */
+}
+
+/* Customize scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Make scrollbar track transparent */
+}
+
+/* Hover effect for category buttons */
+.category-btn:hover {
+  background-color: #FC1503 !important; /* Change background color on hover */
+  color: white !important; /* Change text color on hover */
+}
+
+/* Hover effect for text within category buttons */
+.category-btn:hover span {
+  color: white !important; /* Change text color on hover */
+}
+
+/* Set height and width for react player */
+.react-player {
+  height: 77vh !important; /* Set height */
+  width: 100% !important; /* Set width */
+}
+
+/* Styling for search bar */
+.search-bar {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  width: 350px; /* Set width */
+}
+
+
+/* Style category buttons */
+.category-btn {
+  font-weight: bold !important; /* Set font weight */
+  text-transform: capitalize; /* Capitalize text */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 15px; /* Set padding */
+  margin: 10px 0px; /* Set margin */
+  border-radius: 20px; /* Set border radius */
+  transition: all 0.3s ease; /* Add transition effect */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px; /* Adjust margin */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important; /* Hide copyright text */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important; /* Allow horizontal scrolling */
+  }
+
+  .react-player {
+    height: 45vh !important; /* Adjust height */
+  }
+  .search-bar {
+    width: 200px; /* Adjust width */
+  }
+}
